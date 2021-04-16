@@ -19,13 +19,27 @@ git push --set-upstream origin branchName
 git commit -am 'tell about your changes'
 git push
 ```
+> The flag `-am` only adds all modified files
+> NOT any new files
 
-When you have created new files the following one is required.
+When you have created new file(s) the following one is required.
 ```
 git add .
+# or
+git add ./path/to/file.txt
+# or
+git add ./path/to/folder
+```
+> The `add .` will add all new and eddited files  
+> The `add ./path/to/file.txt` will add that one file if it's new or edited  
+> The `add ./path/to/folder` will add all the edited and new files in that folder
+
+Then 
+```
 git commit -m 'tell about your changes'
 git push
 ```
+> The flag `-m` is only for adding the message: `'tell about your changes'`  
 
 ### Get your local branches
 ```
